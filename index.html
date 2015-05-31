@@ -11,6 +11,7 @@
 
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- IE8 support for HTML5 elements and media queries -->
@@ -24,7 +25,7 @@
 <body>
 
 	<header>	
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -34,15 +35,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Matt Fisher</a>
+      <a class="navbar-brand" href="#hero"><p>Matt Fisher</p></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">       
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="page-scroll"><a href="#about">About</a></li>
+        <li class="page-scroll"><a href="#portfolio">Portfolio</a></li>
+        <li class="page-scroll"><a href="#contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -63,10 +64,13 @@
 			
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<h1 class="text-center">Matt Fisher</h1>
-					<span class="glyphicon glyphicon-camera" aria-hidden="true" style="font-size: 50px;"></span>					
+                    <h1 class="text-center"><strong>Matt Fisher</strong></h1>
+                    <h1>
+                    <span class="glyphicon glyphicon-minus"></span>
+					<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                    <span class="glyphicon glyphicon-minus"></span>
+                    </h1>
 					<h2 class="text-center">A Photographer & Wannabe Web Designer</h2>
-					<p>Something News ssss</p>
 				</div>
 			</div>
 			
@@ -83,6 +87,13 @@
 				<div class="col-sm-12 text-center">
 				
 					<h1>About</h1>
+                    
+                     <h1>
+    					<span class="glyphicon glyphicon-minus"></span>
+    					<span class="glyphicon glyphicon-user"></span>
+    					<span class="glyphicon glyphicon-minus"></span>
+    				</h1>
+                    
 				</div>
 			</div>
 			
@@ -103,8 +114,8 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
 			
 			<div class="row">
 				<div class="col-sm-12 text-center">
-				
-					<button type="button" class="btn btn-default">Download CV</button>
+				    <br>
+                    <a href="#"><button type="button" class="btn btn-default">Download CV</button></a>
 				</div>
 			</div>
 			
@@ -119,37 +130,103 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
 			
 				<div class="col-sm-12">
 					<h1>Portfolio</h1>
+            
+                    <h1>
+    					<span class="glyphicon glyphicon-minus"></span>
+    					<span class="glyphicon glyphicon-briefcase"></span>
+    					<span class="glyphicon glyphicon-minus"></span>
+    				</h1>
+            
 				</div>
-			
-			</div>
+			    
 			<div class="row">
-				
-				<div class="col-md-3 col-sm-6">
-					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-						<img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+                
+				<div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
 					</a>				
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/2.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/3.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
-				
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/4.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/5.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/6.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/7.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
-				<div class="col-md-3 col-sm-6">
-					<img src="images/portfolio/6.jpg" class="img-responsive" alt="" />				
+                
+                <div class="col-md-3 col-sm-6 portfolio-item">
+					<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">						
+                        <div class="caption">
+                            <div class="caption-content">
+                                <span class="glyphicon glyphicon-zoom-in"></span>
+                            </div>
+                        </div>                        
+                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
+					</a>				
 				</div>
 			</div>
 		</div>
@@ -163,41 +240,52 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
 			<div class="row">
 			
 				<div class="col-sm-12">
-					<h1>Contact</h1>	
+					<h1>Contact</h1>
+                   
+                    <h1>
+    					<span class="glyphicon glyphicon-minus"></span>
+    					<span class="glyphicon glyphicon-envelope"></span>
+    					<span class="glyphicon glyphicon-minus"></span>
+    				</h1>
+                    
 				</div>
 			
 			</div>
 			
 			<div class="row">
 			
-				<div class="col-sm-12">
+				<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
 								
 					<form>
-				
-						
+							<div class="row"> 			
   							<div class="form-group">
   							
-  							<div class="row">
-   								 <label class="col-sm-3" for="Name">Your Name</label>
+  							                            
+                                
+                                
+  								  <label for="email">Email address</label>
+   									 <input type="email" class="form-control" id="email" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">  
+   								 <label for="Name">Your Name</label>
     							<input type="text" class="form-control"  id="Name" placeholder="Enter Full Name">
     								
-    						</div>		
-    												
-  							<div class="form-group">
-  								  <label class="col-sm-9" for="email">Email address</label>
-   									 <input type="email" class="form-control" id="email" placeholder="Enter email">
-  							</div>
-  						
-  						</div>
-  						
+    						</div>								
+  											
   							<div class="form-group">
  								<label for="message">Your Message</label>
     								<textarea class="form-control" rows="5"></textarea>
   							</div>
   
-  						<button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                            <div class="form-group">
+                                <label for="exampleInputFile">Attach Image (optional)</label>
+                                    <input type="file" id="exampleInputFile">
+                                        
+                            </div>
+                                
+  						<button type="submit" class="btn btn-lg btn-primary center-block">Submit</button>
 					</form>
-											
+                    </div>						
 				</div>
 			
 			</div>
@@ -208,28 +296,71 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
 	
 	<footer>
 	
-		<div class="container">
+		<div class="container text-center">
 		
 			<div clazss="row"
 			
 				<div class="col-sm-6">
 				
-					<h1 class="text-center">Address</h1>
+					<h2>Address</h2>
 					
-					John Dalton <br>
-					Chester Street <br>
-					Manchester <br>
+            <p>John Dalton</p>
+            <p>Chester Street</p> 
+            <p>Manchester</p> 
 				
 				</div>
 			
-				<div class="col-sm-6">
-					<h1>Find me online</h1>
+				<div class="col-sm-6 text-center">
+					<h2>Find me online</h2>
+                    
+                       <ul class="list-unstyled list-inline">
+                            
+                            <li>
+
+                                <a href="https://twitter.com" target="_blank">
+
+                                    <img src="images/twitter.png" alt="twitter" width="64" height="64">
+
+                                </a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="https://linkedin.com" target="_blank">
+
+                                    <img src="images/linkedin.png" alt="linkedin" width="64" height="64" >
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+                    
 				</div>
 			
 			</div>
 		
-		</div> <!--.container--!>
+		</div> <!--.container-->
 	
+        <section id="footer-below">
+            
+            <div class="container">
+                
+                <div class="row">
+                    
+                    <div class="col-sm-12 text-center">
+                        
+                        Copyright © 2015 - Matt Fisher
+
+                    </div><!-- .col-sm-12 -->
+
+                </div><!-- .row -->
+
+            </div><!-- .container -->
+
+        </section><!-- #footer-below -->
+
 	</footer>
 	
 	
@@ -239,7 +370,7 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
 	
 	
 	
-<!--Modals--!>
+
 
 <!-- Modal -->
 <div class="modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -247,15 +378,14 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
       <div class="modal-body">
       <img src="images/portfolio/1.jpg" class="img-responsive" alt="" />
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ex. Etiam aliquet consequat mi, non convallis ligula convallis quis. In id justo consequat, ultricies augue at, aliquam nibh. Proin a tortor turpis. Etiam venenatis sodales ante, non gravida tellus sodales sed. Aliquam tincidunt sagittis urna, sit amet tristique arcu. Nam rutrum purus in purus vestibulum rutrum. Praesent tincidunt nisi sed volutpat lobortis.
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et ipsum ex. Etiam aliquet consequat mi, non convallis ligula convallis quis. In id justo consequat, ultricies augue at, aliquam nibh. Proin a tortor turpis. Etiam venenatis sodales ante, non gravida tellus sodales sed. Aliquam tincidunt sagittis urna, sit amet tristique arcu. Nam rutrum purus in purus vestibulum rutrum. Praesent tincidunt nisi sed volutpat lobortis.<p></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
@@ -265,6 +395,7 @@ You think water moves fast? You should see ice. It moves like it has a mind. Lik
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 	<script src="script.js"></script>
 
 </body>
